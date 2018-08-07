@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdal_hasanmridha.checkbox.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <CheckBox
+            android:id="@+id/checkBox_Dog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:checked="false"
+            android:text="Dog" />
+
+        <CheckBox
+            android:id="@+id/checkBox_Cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox_Dog"
+            android:layout_marginTop="16dp"
+            android:text="Cat" />
+
+        <CheckBox
+            android:id="@+id/checkBox_Cow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/checkBox_Cat"
+            android:layout_alignRight="@+id/checkBox_Cat"
+            android:layout_below="@+id/checkBox_Cat"
+            android:layout_marginTop="13dp"
+            android:text="Cow" />
+
+        <Button
+            android:id="@+id/Select_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox_Cow"
+            android:layout_marginTop="16dp"
+            android:text="Select" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
