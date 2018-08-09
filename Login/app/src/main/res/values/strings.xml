@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="login_page_txt">Login Page</string>
+    <string name="password_txt">Password :</string>
+    <string name="user_name_txt">User Name :</string>
+    <string name="attempts_txt">Attempts :</string>
+    <string name="login_btn">Login</string>
+    <string name="welcome_to_the_user_area_txt">Welcome to the User Area</string>
+</resources>

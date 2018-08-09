@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdal_hasanmridha.login.Login">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/login_page_txt"
+            tools:text="Login Page" />
+
+        <TextView
+            android:id="@+id/textView_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="56dp"
+            android:layout_toLeftOf="@+id/user_name_txt"
+            android:layout_toStartOf="@+id/user_name_txt"
+            android:text="@string/user_name_txt"
+            tools:text="User Name :" />
+
+        <TextView
+            android:id="@+id/textView_PassWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_UserName"
+            android:layout_alignStart="@+id/textView_UserName"
+            android:layout_below="@+id/user_name_txt"
+            android:layout_marginTop="39dp"
+            android:text="@string/password_txt"
+            tools:text="Password :" />
+
+        <EditText
+            android:id="@+id/user_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_UserName"
+            android:layout_alignBottom="@+id/textView_UserName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_PassWord"
+            android:layout_alignBottom="@+id/textView_PassWord"
+            android:layout_alignLeft="@+id/user_name_txt"
+            android:layout_alignStart="@+id/user_name_txt"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView_Attempts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_PassWord"
+            android:layout_alignStart="@+id/textView_PassWord"
+            android:layout_below="@+id/password_Txt"
+            android:layout_marginTop="34dp"
+            android:text="@string/attempts_txt"
+            tools:text="Attempts :" />
+
+        <Button
+            android:id="@+id/button_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_Attempts"
+            android:layout_alignStart="@+id/textView_Attempts"
+            android:layout_below="@+id/textView_Attempts"
+            android:layout_marginTop="26dp"
+            android:text="@string/login_btn" />
+
+        <TextView
+            android:id="@+id/attempts_Counts_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_Attempts"
+            android:layout_alignBottom="@+id/textView_Attempts"
+            android:layout_alignLeft="@+id/password_Txt"
+            android:layout_alignStart="@+id/password_Txt" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
